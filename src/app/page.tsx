@@ -1,6 +1,4 @@
-// app/page.jsx
 'use client';
-
 import { useState, useEffect } from 'react';
 import { 
   Ship, 
@@ -15,78 +13,6 @@ import {
   X
 } from 'lucide-react';
 import { motion } from 'framer-motion';
-
-// Animation variants
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.3
-    }
-  }
-};
-
-const itemVariants = {
-  hidden: { y: 50, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      damping: 12,
-      stiffness: 100
-    }
-  }
-};
-
-const buttonVariants = {
-  hidden: { scale: 0, opacity: 0 },
-  visible: {
-    scale: 1,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      stiffness: 200,
-      delay: 0.8
-    }
-  },
-  hover: {
-    scale: 1.05,
-    transition: {
-      type: "spring",
-      stiffness: 400
-    }
-  },
-  tap: {
-    scale: 0.95
-  }
-};
-
-const backgroundVariants = {
-  hidden: { 
-    backgroundPosition: '0% 50%',
-    opacity: 0 
-  },
-  visible: {
-    backgroundPosition: '100% 50%',
-    opacity: 1,
-    transition: {
-      backgroundPosition: {
-        duration: 15,
-        repeat: Infinity,
-        repeatType: "mirror",
-        ease: "linear"
-      },
-      opacity: {
-        duration: 0.8,
-        ease: "easeOut"
-      }
-    }
-  }
-};
-
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -197,27 +123,26 @@ export default function Home() {
      <motion.section 
         id="home" 
         className="pt-32 pb-20 bg-gradient-to-br from-blue-50 via-white to-gray-100 bg-[length:200%_200%]"
-        // variants={backgroundVariants}
         initial="hidden"
         animate="visible"
       >
         <div className="container mx-auto px-4">
           <motion.div 
             className="max-w-4xl mx-auto text-center"
-            variants={containerVariants}
+           
             initial="hidden"
             animate="visible"
           >
             <motion.h1 
               className="text-4xl md:text-6xl font-bold text-gray-800 mb-6"
-              // variants={itemVariants}
+         
             >
               Expert Dredging, Transportation & Construction Solutions
             </motion.h1>
             
             <motion.p 
               className="text-xl text-gray-600 mb-8"
-              // variants={itemVariants}
+           
             >
               Providing comprehensive marine and infrastructure services with cutting-edge technology and unmatched expertise.
             </motion.p>
@@ -225,7 +150,7 @@ export default function Home() {
             <motion.button 
               onClick={() => scrollToSection('contact')}
               className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
-              // variants={buttonVariants}
+        
               whileHover="hover"
               whileTap="tap"
             >
