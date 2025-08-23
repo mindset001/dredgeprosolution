@@ -197,7 +197,7 @@ export default function Home() {
      <motion.section 
         id="home" 
         className="pt-32 pb-20 bg-gradient-to-br from-blue-50 via-white to-gray-100 bg-[length:200%_200%]"
-        variants={backgroundVariants}
+        // variants={backgroundVariants}
         initial="hidden"
         animate="visible"
       >
@@ -210,14 +210,14 @@ export default function Home() {
           >
             <motion.h1 
               className="text-4xl md:text-6xl font-bold text-gray-800 mb-6"
-              variants={itemVariants}
+              // variants={itemVariants}
             >
               Expert Dredging, Transportation & Construction Solutions
             </motion.h1>
             
             <motion.p 
               className="text-xl text-gray-600 mb-8"
-              variants={itemVariants}
+              // variants={itemVariants}
             >
               Providing comprehensive marine and infrastructure services with cutting-edge technology and unmatched expertise.
             </motion.p>
@@ -225,7 +225,7 @@ export default function Home() {
             <motion.button 
               onClick={() => scrollToSection('contact')}
               className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
-              variants={buttonVariants}
+              // variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
             >
