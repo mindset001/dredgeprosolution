@@ -272,7 +272,7 @@ export default function Home() {
       {/* Hero Section */}
       <section 
         id="home" 
-        className="pt-32 pb-20 bg-gradient-to-br from-blue-50 via-white to-gray-100 animate-gradient-shift"
+        className="pt-32 pb-20 bg-gradient-to-br h-[100vh] from-blue-50 via-white to-gray-100 animate-gradient-shift"
       >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -306,7 +306,7 @@ export default function Home() {
           </div>
 
           {/* Animated scroll indicator */}
-          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in animation-delay-800">
+          <div className="hidden md:block md:absolute bottom-20 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in animation-delay-800">
             <div
               className="animate-bounce cursor-pointer"
               onClick={() => scrollToSection('services')}
@@ -503,7 +503,7 @@ export default function Home() {
                   <Mail className="h-6 w-6 text-blue-400 mr-4 mt-1" />
                   <div>
                     <h4 className="font-semibold">Email</h4>
-                    <p className="text-gray-300">info@dredgeprosolutions.com</p>
+                    <p className="text-gray-300">sales@dredgeprosolutions.com.ng</p>
                   </div>
                 </div>
                 <div className="flex items-start">
