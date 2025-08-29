@@ -441,7 +441,7 @@ export default function Home() {
       </section>
 
       {/* Projects/Features Section */}
-      <section id="projects" className="py-20 bg-white">
+      {/* <section id="projects" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 opacity-0 animate-fade-in-up">Our Projects</h2>
@@ -476,7 +476,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gray-900 text-white">
@@ -506,13 +506,13 @@ export default function Home() {
                     <p className="text-gray-300">sales@dredgeprosolutions.com.ng</p>
                   </div>
                 </div>
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <MapPin className="h-6 w-6 text-blue-400 mr-4 mt-1" />
                   <div>
                     <h4 className="font-semibold">Address</h4>
                     <p className="text-gray-300">123 Marine Way, Coastal City, CC 12345</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -625,6 +625,7 @@ export default function Home() {
           
           <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
             <p>&copy; {new Date().getFullYear()} DredgePro Solutions. All rights reserved.</p>
+            <p>Designed @ Acme Innovations</p>
           </div>
         </div>
       </footer>
