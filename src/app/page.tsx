@@ -306,7 +306,7 @@ export default function Home() {
           </div>
 
           {/* Animated scroll indicator */}
-          <div className="hidden md:block md:absolute bottom-20 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in animation-delay-800">
+          {/* <div className="hidden md:block md:absolute bottom-20 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in animation-delay-800">
             <div
               className="animate-bounce cursor-pointer"
               onClick={() => scrollToSection('services')}
@@ -316,7 +316,7 @@ export default function Home() {
               </div>
               <p className="text-blue-600 text-sm mt-2">Scroll Down</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
